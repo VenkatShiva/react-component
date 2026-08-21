@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+  font-family: monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+}
