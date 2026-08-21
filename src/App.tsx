@@ -12,6 +12,9 @@ function App() {
         <li>
           <MyLink to="/components/stop-watch">Stop Watch</MyLink>
         </li>
+        <li>
+          <MyLink to="/components/debounced-search">Debounced Search</MyLink>
+        </li>
       </ol>
     </main>
   );

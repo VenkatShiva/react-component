@@ -13,6 +13,7 @@ const Layout = lazy(() => import("./Layout"));
 const App = lazy(() => import("./App"));
 const MusicBox = lazy(() => import("./components/MusicBox"));
 const StopWatch = lazy(() => import("./components/StopWatch"));
+const DebouncedSearch = lazy(() => import("./components/DebouncedSearch"));
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "stop-watch",
         element: <StopWatch />,
+      },
+      {
+        path: "debounced-search",
+        element: <DebouncedSearch />,
       },
     ],
   },
