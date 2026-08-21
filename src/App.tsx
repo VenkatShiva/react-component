@@ -1,12 +1,19 @@
 import "./App.css";
-import MusicBox from "./Components/MusicBox";
+import MyLink from "./helpers/Link";
 
 function App() {
   return (
-    <>
-      <h1 className="text-4xl text-center font-bold">Welcome</h1>
-      <MusicBox />
-    </>
+    <main className="flex flex-col items-center p-4">
+      <h1 className="text-5xl font-bold">Components</h1>
+      <ol className="mt-5 w-125 list-decimal">
+        <li>
+          <MyLink to="/components/music-box">Music Box</MyLink>
+        </li>
+        <li>
+          <MyLink to="/components/stop-watch">Stop Watch</MyLink>
+        </li>
+      </ol>
+    </main>
   );
 }
 

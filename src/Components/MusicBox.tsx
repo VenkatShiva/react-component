@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import "./styles.css";
+import Button from "../helpers/Button";
 
 const COLORS: Array<string> = [
   "red",
@@ -55,6 +56,7 @@ function MusicBox() {
   }, []);
   return (
     <section className="p-4 flex flex-col items-center">
+      <h2 className="text-4xl font-semibold mb-2">Music Box</h2>
       <div className="w-125 h-62.5 border-2 flex items-end">
         {COLORS.map((color: string, index: number) => (
           <div
@@ -69,25 +71,10 @@ function MusicBox() {
           ></div>
         ))}
       </div>
-      <div className="flex gap-2 mt-2">
-        <button
-          onClick={startMusic}
-          className="bg-blue-600 p-2 px-3 text-white cursor-pointer"
-        >
-          Start
-        </button>
-        <button
-          onClick={pause}
-          className="bg-blue-600 p-2 px-3 text-white cursor-pointer"
-        >
-          Pause
-        </button>
-        <button
-          onClick={stop}
-          className="bg-blue-600 p-2 px-3 text-white cursor-pointer"
-        >
-          Stop
-        </button>
+      <div className="flex gap-3 mt-3">
+        <Button onClick={startMusic}>Start</Button>
+        <Button onClick={pause}>Pause</Button>
+        <Button onClick={stop}>Stop</Button>
       </div>
     </section>
   );
