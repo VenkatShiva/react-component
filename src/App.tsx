@@ -21,6 +21,9 @@ function App() {
         <li>
           <MyLink to="/components/auto-carousel">Auto Carousel</MyLink>
         </li>
+        <li>
+          <MyLink to="/components/undo-todo-list">Undo Todo List</MyLink>
+        </li>
       </ol>
     </main>
   );

@@ -12,6 +12,7 @@ const StopWatch = lazy(() => import("./components/StopWatch"));
 const DebouncedSearch = lazy(() => import("./components/DebouncedSearch"));
 const CustomDropdown = lazy(() => import("./components/CustomDropdown"));
 const AutoCarousel = lazy(() => import("./components/AutoCarousel"));
+const UndoTodoList = lazy(() => import("./components/UndoTodoList"));
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "auto-carousel",
         element: <AutoCarousel />,
+      },
+      {
+        path: "undo-todo-list",
+        element: <UndoTodoList />,
       },
     ],
   },
