@@ -15,6 +15,9 @@ function App() {
         <li>
           <MyLink to="/components/debounced-search">Debounced Search</MyLink>
         </li>
+        <li>
+          <MyLink to="/components/custom-dropdown">Custom Dropdown</MyLink>
+        </li>
       </ol>
     </main>
   );

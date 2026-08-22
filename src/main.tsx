@@ -4,16 +4,13 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Loader from "./helpers/Loader";
 
-// import App from "./App.tsx";
-// import MusicBox from "./Components/MusicBox.tsx";
-// import Layout from "./Layout.tsx";
-
 const Layout = lazy(() => import("./Layout"));
 
 const App = lazy(() => import("./App"));
 const MusicBox = lazy(() => import("./components/MusicBox"));
 const StopWatch = lazy(() => import("./components/StopWatch"));
 const DebouncedSearch = lazy(() => import("./components/DebouncedSearch"));
+const CustomDropdown = lazy(() => import("./components/CustomDropdown"));
 
 const router = createBrowserRouter([
   {
@@ -35,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "debounced-search",
         element: <DebouncedSearch />,
+      },
+      {
+        path: "custom-dropdown",
+        element: <CustomDropdown />,
       },
     ],
   },
