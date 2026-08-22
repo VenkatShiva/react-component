@@ -11,6 +11,7 @@ const MusicBox = lazy(() => import("./components/MusicBox"));
 const StopWatch = lazy(() => import("./components/StopWatch"));
 const DebouncedSearch = lazy(() => import("./components/DebouncedSearch"));
 const CustomDropdown = lazy(() => import("./components/CustomDropdown"));
+const AutoCarousel = lazy(() => import("./components/AutoCarousel"));
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "custom-dropdown",
         element: <CustomDropdown />,
+      },
+      {
+        path: "auto-carousel",
+        element: <AutoCarousel />,
       },
     ],
   },

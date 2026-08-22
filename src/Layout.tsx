@@ -4,7 +4,7 @@ import MyLink from "./helpers/Link";
 function Layout() {
   return (
     <main className="p-4">
-      <nav className="flex justify-end hover:underline">
+      <nav className="flex hover:underline">
         <MyLink to="/">Home</MyLink>
       </nav>
       <Outlet />

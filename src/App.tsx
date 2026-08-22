@@ -18,6 +18,9 @@ function App() {
         <li>
           <MyLink to="/components/custom-dropdown">Custom Dropdown</MyLink>
         </li>
+        <li>
+          <MyLink to="/components/auto-carousel">Auto Carousel</MyLink>
+        </li>
       </ol>
     </main>
   );
